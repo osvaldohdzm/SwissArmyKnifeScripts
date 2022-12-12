@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Wed Dec  7 01:47:26 2022 as: &quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -vvv -&#45;open -Pn -sS -sV -p- -&#45;stats-every 10s -&#45;script-timeout 1500ms -&#45;host-timeout 120m -T5 -oX outputs\\189.204.208.57.xml 189.204.208.57 -->
+<nmaprun scanner="nmap" args="&quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -vvv -&#45;open -Pn -sS -sV -p- -&#45;stats-every 10s -&#45;script-timeout 1500ms -&#45;host-timeout 120m -T5 -oX outputs\\189.204.208.57.xml 189.204.208.57" start="1670399246" startstr="Wed Dec  7 01:47:26 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1670399247"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1670399247"/>
+<taskbegin task="SYN Stealth Scan" time="1670399247"/>
+<taskprogress task="SYN Stealth Scan" time="1670399256" percent="1.02" remaining="870" etc="1670400125"/>
+<taskprogress task="SYN Stealth Scan" time="1670399266" percent="2.47" remaining="750" etc="1670400015"/>
+<taskprogress task="SYN Stealth Scan" time="1670399276" percent="3.86" remaining="722" etc="1670399998"/>
+<taskprogress task="SYN Stealth Scan" time="1670399286" percent="5.04" remaining="735" etc="1670400021"/>
+<taskprogress task="SYN Stealth Scan" time="1670399296" percent="6.13" remaining="751" etc="1670400047"/>
+<taskprogress task="SYN Stealth Scan" time="1670399306" percent="7.18" remaining="763" etc="1670400069"/>
+<taskprogress task="SYN Stealth Scan" time="1670399316" percent="8.67" remaining="727" etc="1670400043"/>
+<taskprogress task="SYN Stealth Scan" time="1670399326" percent="9.99" remaining="713" etc="1670400038"/>
+<taskprogress task="SYN Stealth Scan" time="1670399336" percent="10.73" remaining="741" etc="1670400077"/>
+<taskprogress task="SYN Stealth Scan" time="1670399346" percent="11.64" remaining="752" etc="1670400097"/>
+<taskprogress task="SYN Stealth Scan" time="1670399356" percent="12.84" remaining="740" etc="1670400096"/>
+<taskprogress task="SYN Stealth Scan" time="1670399366" percent="13.51" remaining="762" etc="1670400128"/>
+<taskprogress task="SYN Stealth Scan" time="1670399376" percent="14.18" remaining="781" etc="1670400157"/>
+<taskprogress task="SYN Stealth Scan" time="1670399386" percent="15.32" remaining="769" etc="1670400154"/>
+<taskprogress task="SYN Stealth Scan" time="1670399396" percent="16.32" remaining="764" etc="1670400160"/>
+<taskprogress task="SYN Stealth Scan" time="1670399406" percent="17.16" remaining="768" etc="1670400173"/>
+<taskprogress task="SYN Stealth Scan" time="1670399416" percent="18.37" remaining="751" etc="1670400167"/>
+<taskprogress task="SYN Stealth Scan" time="1670399426" percent="19.06" remaining="761" etc="1670400186"/>
+<taskprogress task="SYN Stealth Scan" time="1670399436" percent="19.39" remaining="786" etc="1670400222"/>
+<taskprogress task="SYN Stealth Scan" time="1670399446" percent="20.22" remaining="786" etc="1670400231"/>
+<taskprogress task="SYN Stealth Scan" time="1670399456" percent="21.32" remaining="772" etc="1670400227"/>
+<taskprogress task="SYN Stealth Scan" time="1670399466" percent="22.58" remaining="752" etc="1670400217"/>
+<taskprogress task="SYN Stealth Scan" time="1670399476" percent="23.83" remaining="732" etc="1670400208"/>
+<taskprogress task="SYN Stealth Scan" time="1670399486" percent="24.61" remaining="733" etc="1670400218"/>
+<taskprogress task="SYN Stealth Scan" time="1670399496" percent="25.55" remaining="726" etc="1670400221"/>
+<taskprogress task="SYN Stealth Scan" time="1670399506" percent="25.63" remaining="752" etc="1670400258"/>
+<taskprogress task="SYN Stealth Scan" time="1670399516" percent="27.94" remaining="694" etc="1670400210"/>
+<taskprogress task="SYN Stealth Scan" time="1670399526" percent="29.68" remaining="661" etc="1670400187"/>
+<taskprogress task="SYN Stealth Scan" time="1670399536" percent="31.14" remaining="640" etc="1670400175"/>
+<taskprogress task="SYN Stealth Scan" time="1670399546" percent="32.30" remaining="627" etc="1670400173"/>
+<taskprogress task="SYN Stealth Scan" time="1670399556" percent="33.82" remaining="605" etc="1670400161"/>
+<taskprogress task="SYN Stealth Scan" time="1670399566" percent="35.33" remaining="584" etc="1670400150"/>
+<taskprogress task="SYN Stealth Scan" time="1670399576" percent="37.31" remaining="553" etc="1670400129"/>
+<taskprogress task="SYN Stealth Scan" time="1670399586" percent="38.77" remaining="536" etc="1670400121"/>
+<taskprogress task="SYN Stealth Scan" time="1670399596" percent="40.35" remaining="517" etc="1670400112"/>
+<taskprogress task="SYN Stealth Scan" time="1670399606" percent="41.39" remaining="509" etc="1670400114"/>
+<taskprogress task="SYN Stealth Scan" time="1670399616" percent="43.61" remaining="478" etc="1670400093"/>
+<taskprogress task="SYN Stealth Scan" time="1670399626" percent="44.89" remaining="466" etc="1670400091"/>
+<taskprogress task="SYN Stealth Scan" time="1670399636" percent="45.91" remaining="459" etc="1670400094"/>
+<taskprogress task="SYN Stealth Scan" time="1670399646" percent="46.73" remaining="455" etc="1670400101"/>
+<taskprogress task="SYN Stealth Scan" time="1670399656" percent="47.36" remaining="455" etc="1670400111"/>
+<taskprogress task="SYN Stealth Scan" time="1670399666" percent="48.09" remaining="453" etc="1670400118"/>
+<taskprogress task="SYN Stealth Scan" time="1670399676" percent="49.95" remaining="430" etc="1670400106"/>
+<taskprogress task="SYN Stealth Scan" time="1670399686" percent="51.53" remaining="413" etc="1670400099"/>
+<taskprogress task="SYN Stealth Scan" time="1670399696" percent="53.09" remaining="397" etc="1670400093"/>
+<taskprogress task="SYN Stealth Scan" time="1670399706" percent="54.68" remaining="381" etc="1670400086"/>
+<taskprogress task="SYN Stealth Scan" time="1670399716" percent="56.28" remaining="365" etc="1670400080"/>
+<taskprogress task="SYN Stealth Scan" time="1670399726" percent="57.70" remaining="352" etc="1670400077"/>
+<taskprogress task="SYN Stealth Scan" time="1670399736" percent="58.49" remaining="347" etc="1670400083"/>
+<taskprogress task="SYN Stealth Scan" time="1670399746" percent="59.46" remaining="341" etc="1670400086"/>
+<taskprogress task="SYN Stealth Scan" time="1670399756" percent="60.74" remaining="330" etc="1670400085"/>
+<taskprogress task="SYN Stealth Scan" time="1670399766" percent="62.38" remaining="313" etc="1670400079"/>
+<taskprogress task="SYN Stealth Scan" time="1670399776" percent="64.23" remaining="295" etc="1670400071"/>
+<taskprogress task="SYN Stealth Scan" time="1670399786" percent="66.21" remaining="276" etc="1670400061"/>
+<taskprogress task="SYN Stealth Scan" time="1670399796" percent="67.38" remaining="266" etc="1670400062"/>
+<taskprogress task="SYN Stealth Scan" time="1670399806" percent="68.89" remaining="253" etc="1670400058"/>
+<taskprogress task="SYN Stealth Scan" time="1670399816" percent="70.24" remaining="242" etc="1670400057"/>
+<taskprogress task="SYN Stealth Scan" time="1670399826" percent="71.66" remaining="229" etc="1670400055"/>
+<taskprogress task="SYN Stealth Scan" time="1670399836" percent="73.36" remaining="214" etc="1670400050"/>
+<taskprogress task="SYN Stealth Scan" time="1670399846" percent="74.65" remaining="204" etc="1670400049"/>
+<taskprogress task="SYN Stealth Scan" time="1670399856" percent="75.83" remaining="195" etc="1670400050"/>
+<taskprogress task="SYN Stealth Scan" time="1670399866" percent="77.25" remaining="183" etc="1670400048"/>
+<taskprogress task="SYN Stealth Scan" time="1670399876" percent="79.11" remaining="167" etc="1670400042"/>
+<taskprogress task="SYN Stealth Scan" time="1670399886" percent="80.87" remaining="152" etc="1670400037"/>
+<taskprogress task="SYN Stealth Scan" time="1670399896" percent="82.26" remaining="140" etc="1670400036"/>
+<taskprogress task="SYN Stealth Scan" time="1670399906" percent="83.61" remaining="130" etc="1670400035"/>
+<taskprogress task="SYN Stealth Scan" time="1670399916" percent="84.75" remaining="121" etc="1670400036"/>
+<taskprogress task="SYN Stealth Scan" time="1670399926" percent="86.14" remaining="110" etc="1670400035"/>
+<taskprogress task="SYN Stealth Scan" time="1670399936" percent="87.34" remaining="100" etc="1670400036"/>
+<taskprogress task="SYN Stealth Scan" time="1670399946" percent="88.72" remaining="89" etc="1670400035"/>
+<taskprogress task="SYN Stealth Scan" time="1670399956" percent="89.77" remaining="81" etc="1670400037"/>
+<taskprogress task="SYN Stealth Scan" time="1670399966" percent="90.73" remaining="74" etc="1670400039"/>
+<taskprogress task="SYN Stealth Scan" time="1670399976" percent="91.88" remaining="65" etc="1670400040"/>
+<taskprogress task="SYN Stealth Scan" time="1670399986" percent="93.14" remaining="55" etc="1670400040"/>
+<taskprogress task="SYN Stealth Scan" time="1670399996" percent="94.23" remaining="46" etc="1670400042"/>
+<taskprogress task="SYN Stealth Scan" time="1670400006" percent="95.39" remaining="37" etc="1670400043"/>
+<taskprogress task="SYN Stealth Scan" time="1670400016" percent="96.83" remaining="26" etc="1670400041"/>
+<taskprogress task="SYN Stealth Scan" time="1670400026" percent="98.62" remaining="11" etc="1670400037"/>
+<taskprogress task="SYN Stealth Scan" time="1670400036" percent="99.96" remaining="1" etc="1670400036"/>
+<taskend task="SYN Stealth Scan" time="1670400036" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1670400037"/>
+<taskprogress task="Service scan" time="1670400048" percent="0.00"/>
+<taskend task="Service scan" time="1670400053" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1670400053"/>
+<taskend task="NSE" time="1670400053"/>
+<taskbegin task="NSE" time="1670400053"/>
+<taskend task="NSE" time="1670400053"/>
+<host starttime="1670399247" endtime="1670400053"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="189.204.208.57" addrtype="ipv4"/>
+<hostnames>
+<hostname name="57.189-204-208.bestelclientes.com.mx" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-response" count="65534" proto="tcp" ports="1-52,54-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="domain" extrainfo="generic dns response: NOTIMP" servicefp="SF-Port53-TCP:V=7.93%I=7%D=12/7%Time=63904830%P=i686-pc-windows-windows%r(DNSStatusRequestTCP,E,&quot;\0\x0c\0\0\x90\x84\0\0\0\0\0\0\0\0&quot;);" method="probed" conf="10"/></port>
+</ports>
+<times srtt="237750" rttvar="154151" to="300000"/>
+</host>
+<runstats><finished time="1670400053" timestr="Wed Dec  7 02:00:53 2022" summary="Nmap done at Wed Dec  7 02:00:53 2022; 1 IP address (1 host up) scanned in 807.35 seconds" elapsed="807.35" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
