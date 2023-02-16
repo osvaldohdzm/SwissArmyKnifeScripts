@@ -22,7 +22,7 @@ $env:Path += ';$nmap_path '
 
 Write-Host "`nSplitting list...`n" -NoNewline -ForegroundColor green
 
-$filename = "nmap-cnext-list.txt"
+$filename = "nmap-targets-list.txt"
 
 $target_list_num_lines = (Get-Content $filename).Length
 $num_terminals =  10
