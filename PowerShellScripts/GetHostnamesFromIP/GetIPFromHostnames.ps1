@@ -1,20 +1,24 @@
-$NameList=Get-Content hostname-list.txt
+$IPList = Get-Content ip-list.txt
 $FinalResult = @()
-foreach ($Name in $NameList) {
-	Write-Host $Name
-    $tempObj = "" | Select-Object Name, IPAddress, Status, ErrorMessage
+foreach ($IP in $IPList) {
+    Write-Host $IP
+    $tempObj = "" | Select-Object IPAddress, Name, Status, ErrorMessage
     try {
-        $dnsRecord = Resolve-DnsName $Name -Server $ServerList -ErrorAction Stop | Where-Object { $_.Type -eq 'A' }
-        $tempObj.Name = $Name
-        $tempObj.IPAddress = ($dnsRecord.IPAddress -join ',')
+        $dnsResult = Resolve-DnsName -Name $IP -ErrorAction Stop
+        $tempObj.IPAddress = $IP
+        $tempObj.Name = $dnsResult.NameHost
         $tempObj.Status = 'OK'
         $tempObj.ErrorMessage = ''
     }
     catch {
-        $tempObj.Name = $Name
-        $tempObj.IPAddress = ''
+        $tempObj.IPAddress = $IP
+        $tempObj.Name = ''
         $tempObj.Status = 'NOT_OK'
         $tempObj.ErrorMessage = $_.Exception.Message
+    }
+    if ($tempObj.Name -eq '') {
+        $tempObj.Status = 'NOT_OK'
+        $tempObj.ErrorMessage = 'No se pudo encontrar el nombre de host'
     }
     $FinalResult += $tempObj
 }
