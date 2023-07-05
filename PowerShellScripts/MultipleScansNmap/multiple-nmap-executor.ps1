@@ -45,7 +45,7 @@ Workflow NMAPParallelScans {
 	}
 
 	Foreach -parallel($list in $lists) {
-$Command = "{`$env:Path += `';C:\Program Files (x86)\Nmap\`' ; foreach(`$line in Get-Content -Encoding UTF8 `"$list`"){ nmap -vvv --open -Pn -sS -sV -p- --stats-every 10s --script-timeout 1500ms --host-timeout 120m -T5 -oX outputs\`$(`$line).xml `$line } ; exit }"
+$Command = "{`$env:Path += `';C:\Program Files (x86)\Nmap\`' ; foreach(`$line in Get-Content -Encoding UTF8 `"$list`"){ nmap -Pn -sS -p- -sV -n --min-rate 5432 --open --stats-every 3s --host-timeout 120m  --initial-rtt-timeout 315ms --min-rtt-timeout 280ms --max-rtt-timeout 350ms  --max-retries 1 --max-scan-delay 0 -oA outputs\`$(`$line) `$line } ; exit }"
  
 Start-Process powershell -ArgumentList "-noexit","-Command & $Command"  
 

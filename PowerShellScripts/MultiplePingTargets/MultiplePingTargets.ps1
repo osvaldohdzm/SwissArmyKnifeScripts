@@ -1,11 +1,14 @@
-$info = Get-Content ping-targets.txt | foreach {
-    If(Test-Connection -ComputerName $_ -Count 1 -Quiet){
-        $status = Write-output "Active"
+# Solicitar la ruta del archivo de objetivos
+$filePath = Read-Host "Introduce la ruta del archivo de objetivos"
+
+$info = Get-Content $filePath | foreach {
+    If(Test-Connection -ComputerName $_ -Count 4 -Quiet){
+        $status = Write-Output "Active"
     }else{
-        $status = Write-output "Inactive"
+        $status = Write-Output "Inactive"
     }
     
-    [pscustomobject][ordered]@{
+    [PSCustomObject]@{
         HostnameIP  = $_
         Status  = $status
     }
@@ -13,8 +16,7 @@ $info = Get-Content ping-targets.txt | foreach {
     Write-Host "$_ is $status"
 }
 
-$info | export-csv ping-results.csv -NoTypeInformation
+$info | Export-Csv ping-results.csv -NoTypeInformation
 
-Write-output "Finished at $(Get-Date)"
+Write-Output "Finished at $(Get-Date)"
 [Console]::ReadKey()
-
